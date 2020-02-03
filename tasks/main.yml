@@ -1,0 +1,10 @@
+# roles/zabbix-api-group/tasks/main.yml
+# Create Zabbix host group
+
+- name: Create host groups
+  zabbix_group:
+    server_url: "{{ zabbix_server_url }}"
+    login_user: "{{ zabbix_login_user }}"
+    login_password: "{{ zabbix_login_password }}"
+    state: "{{ zabbix_group_state }}"
+    host_groups: "{{ zabbix_group_names }}"

@@ -1,0 +1,4 @@
+# roles/zabbix-api-group/defaults/main.yml
+# Default params for zabbix-api-group role
+
+zabbix_group_state: present
